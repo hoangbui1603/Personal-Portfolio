@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440" role="img" aria-labelledby="title desc">
+  <title id="title">Stacked toy building bricks</title>
+  <desc id="desc">Original illustration of colorful interlocking toy bricks stacked on a grid, with a dashed scan frame around a single loose brick.</desc>
+  <defs>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#22d3ee" opacity=".18"/>
+    </pattern>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#10203d"/>
+      <stop offset="1" stop-color="#0a1428"/>
+    </linearGradient>
+    <g id="stud">
+      <rect x="0" y="0" width="24" height="11" rx="2" fill="currentColor"/>
+      <rect x="0" y="0" width="24" height="11" rx="2" fill="#000" opacity=".12"/>
+      <rect x="3" y="2" width="6" height="7" rx="1.5" fill="#fff" opacity=".28"/>
+    </g>
+    <g id="brick2">
+      <use href="#stud" x="8" y="-10"/>
+      <use href="#stud" x="48" y="-10"/>
+      <rect x="0" y="0" width="80" height="48" rx="4" fill="currentColor"/>
+      <rect x="0" y="0" width="80" height="8" rx="4" fill="#fff" opacity=".22"/>
+      <rect x="0" y="38" width="80" height="10" rx="4" fill="#000" opacity=".2"/>
+      <rect x="0.75" y="0.75" width="78.5" height="46.5" rx="4" fill="none" stroke="#000" stroke-opacity=".25" stroke-width="1.5"/>
+    </g>
+    <g id="brick4">
+      <use href="#stud" x="8" y="-10"/>
+      <use href="#stud" x="48" y="-10"/>
+      <use href="#stud" x="88" y="-10"/>
+      <use href="#stud" x="128" y="-10"/>
+      <rect x="0" y="0" width="160" height="48" rx="4" fill="currentColor"/>
+      <rect x="0" y="0" width="160" height="8" rx="4" fill="#fff" opacity=".22"/>
+      <rect x="0" y="38" width="160" height="10" rx="4" fill="#000" opacity=".2"/>
+      <rect x="0.75" y="0.75" width="158.5" height="46.5" rx="4" fill="none" stroke="#000" stroke-opacity=".25" stroke-width="1.5"/>
+    </g>
+  </defs>
+
+  <rect width="640" height="440" rx="20" fill="url(#bg)"/>
+  <rect width="640" height="440" rx="20" fill="url(#dots)"/>
+  <rect x="40" y="388" width="560" height="4" rx="2" fill="#22d3ee" opacity=".35"/>
+
+  <use href="#brick4" x="60" y="340" style="color:#d62828"/>
+  <use href="#brick4" x="220" y="340" style="color:#1d6fd6"/>
+  <use href="#brick2" x="380" y="340" style="color:#f4c20d"/>
+
+  <use href="#brick2" x="100" y="292" style="color:#2a9d50"/>
+  <use href="#brick4" x="180" y="292" style="color:#f4c20d"/>
+  <use href="#brick2" x="340" y="292" style="color:#d62828"/>
+
+  <use href="#brick4" x="140" y="244" style="color:#1d6fd6"/>
+  <use href="#brick2" x="300" y="244" style="color:#d9dde3"/>
+
+  <use href="#brick2" x="200" y="196" style="color:#d62828"/>
+
+  <g transform="translate(500 170) rotate(-12)">
+    <use href="#brick2" x="0" y="0" style="color:#2a9d50"/>
+  </g>
+  <g fill="none" stroke="#22d3ee" stroke-width="3" stroke-linecap="round">
+    <path d="M476 138 v-18 h18"/>
+    <path d="M582 120 h18 v18"/>
+    <path d="M600 222 v18 h-18"/>
+    <path d="M494 240 h-18 v-18"/>
+  </g>
+  <rect x="476" y="120" width="124" height="120" fill="none" stroke="#22d3ee" stroke-opacity=".45" stroke-width="1.5" stroke-dasharray="6 6"/>
+  <rect x="476" y="252" width="124" height="26" rx="6" fill="#22d3ee" opacity=".14"/>
+  <text x="538" y="270" text-anchor="middle" font-family="ui-monospace, Consolas, monospace" font-size="13" fill="#7dd3fc">part: 2x2 brick?</text>
+</svg>
